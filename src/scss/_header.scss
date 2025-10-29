@@ -69,6 +69,14 @@ header {
           cursor: pointer;
         }
       }
+
+      button {
+        background-color: transparent;
+        padding: 0.5rem;
+        border: none;
+        cursor: pointer;
+        color: var(--text-color);
+      }
     }
   }
 }
