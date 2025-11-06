@@ -5,11 +5,28 @@ footer {
     margin: 0px auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    > div {
+      height: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    p {
-      color: var(--text-color);
-      font-size: 0.875rem;
-      line-height: 1.25rem;
+      > div {
+        display: flex;
+        gap: 1.5rem;
+        > a {
+          color: var(--text-color);
+          text-decoration: inherit;
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+      p {
+        color: var(--text-color);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
     }
   }
 }
