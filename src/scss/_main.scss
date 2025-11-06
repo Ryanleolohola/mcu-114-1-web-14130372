@@ -1,14 +1,27 @@
+/* 確保 section 能撐滿視窗 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
+  /* main 直接撐滿剩餘空間 */
+  .main {
+    flex-grow: 1;
+  }
+
   div {
     &.container {
       min-width: 90vw;
-      margin: 0px auto;
+      margin: 0 auto;
       padding-left: 2rem;
       padding-right: 2rem;
+
       > div {
         width: 100%;
         height: 4rem;
@@ -16,12 +29,26 @@ section {
         justify-content: space-between;
         align-items: center;
       }
-      &.main {
-        flex-grow: 1;
-      }
+    }
+  }
+
+  footer {
+    border-top: 1px solid var(--border-color);
+
+    div {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    p {
+      color: var(--text-color);
+      font-size: 0.875rem;
+      line-height: 1.25rem;
     }
   }
 }
+
 a {
   color: var(--text-color);
   text-decoration: inherit;
