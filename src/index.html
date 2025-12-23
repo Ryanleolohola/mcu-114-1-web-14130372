@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>電子商城</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <link rel="stylesheet" href="./style.min.css" />
   </head>
+
   <body>
     <section>
       <header>
@@ -22,6 +25,7 @@
                 <a href="#">會員中心</a>
               </nav>
             </div>
+
             <div class="right">
               <div class="search">
                 <input type="text" placeholder="查詢書名、作者..." />
@@ -29,60 +33,70 @@
                   <span class="material-symbols-outlined">search</span>
                 </button>
               </div>
-              <button type="button"><span class="material-symbols-outlined">favorite</span></button>
-              <button type="button"><span class="material-symbols-outlined"> shopping_cart </span></button>
+
+              <button type="button">
+                <span class="material-symbols-outlined">favorite</span>
+              </button>
+
+              <button type="button">
+                <span class="material-symbols-outlined">shopping_cart</span>
+              </button>
             </div>
           </div>
         </div>
       </header>
+
+      <!-- ================= MAIN ================= -->
       <div class="main">
         <div class="container">
           <div>
+            <!-- ===== Sidebar ===== -->
             <aside>
               <h3>書籍分類</h3>
               <nav>
                 <a href="#" class="active">
-                  <span><span class="material-symbols-outlined"> auto_stories </span></span>
+                  <span class="material-symbols-outlined">auto_stories</span>
                   <span>文學小說</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> paid </span></span>
+                  <span class="material-symbols-outlined">paid</span>
                   <span>商業理財</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> palette </span></span>
+                  <span class="material-symbols-outlined">palette</span>
                   <span>藝術設計</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> groups </span></span>
+                  <span class="material-symbols-outlined">groups</span>
                   <span>人文社科</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> psychology </span></span>
+                  <span class="material-symbols-outlined">psychology</span>
                   <span>心理勵志</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> escalator_warning </span></span>
+                  <span class="material-symbols-outlined">escalator_warning</span>
                   <span>親子教養</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> cottage </span></span>
+                  <span class="material-symbols-outlined">cottage</span>
                   <span>生活風格</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> language </span></span>
+                  <span class="material-symbols-outlined">language</span>
                   <span>語言學習</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> school </span></span>
+                  <span class="material-symbols-outlined">school</span>
                   <span>考試參考書</span>
                 </a>
                 <a href="#">
-                  <span><span class="material-symbols-outlined"> history_edu </span></span>
-                  <span>童書/親少年文學</span>
+                  <span class="material-symbols-outlined">history_edu</span>
+                  <span>童書／青少年文學</span>
                 </a>
               </nav>
             </aside>
+
             <main>
               <h2 class="books-title">文學小說</h2>
 
@@ -90,9 +104,10 @@
                 <button class="category active">全部</button>
                 <button class="category">台灣文學</button>
                 <button class="category">翻譯文學</button>
-                <button class="category">推理/懸疑</button>
-                <button class="category">科幻/奇幻</button>
+                <button class="category">推理／懸疑</button>
+                <button class="category">科幻／奇幻</button>
               </div>
+
               <div class="books-grid">
                 <div class="book-card">
                   <div class="cover"></div>
@@ -101,6 +116,32 @@
                   <div class="price">NT$450</div>
                 </div>
 
+                <div class="book-card">
+                  <div class="cover"></div>
+                  <div class="title">書籍 A</div>
+                  <div class="author">作者甲</div>
+                  <div class="price">NT$450</div>
+                </div>
+
+                <div class="book-card">
+                  <div class="cover"></div>
+                  <div class="title">書籍 A</div>
+                  <div class="author">作者甲</div>
+                  <div class="price">NT$450</div>
+                </div>
+
+                <div class="book-card">
+                  <div class="cover"></div>
+                  <div class="title">書籍 A</div>
+                  <div class="author">作者甲</div>
+                  <div class="price">NT$450</div>
+                </div>
+                <div class="book-card">
+                  <div class="cover"></div>
+                  <div class="title">書籍 A</div>
+                  <div class="author">作者甲</div>
+                  <div class="price">NT$450</div>
+                </div>
                 <div class="book-card">
                   <div class="cover"></div>
                   <div class="title">書籍 A</div>
@@ -124,6 +165,7 @@
           </div>
         </div>
       </div>
+
       <footer>
         <div class="container">
           <div>

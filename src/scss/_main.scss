@@ -1,49 +1,68 @@
 div.main {
-  .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    > div {
-      display: flex;
-      gap: 2rem;
-      align-items: flex-start;
-    }
+  .container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   aside {
-    width: 20%;
-    flex-shrink: 0;
+    display: none;
+  }
 
+  main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  div.main {
+    .container > div {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    aside {
+      display: block;
+      width: 20%;
+      flex-shrink: 0;
+    }
+
+    main {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+  aside {
     h3 {
       margin: 0;
+      font-size: 18px;
       font-weight: 500;
-      font-size: 1.125rem;
-      line-height: 1.75rem;
       color: var(--header-color);
     }
 
     nav {
-      margin-top: 1.5rem;
-
-      a {
-        padding: 0.5rem 0.75rem;
-        border-radius: 0.5rem;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        color: var(--text-color);
-
-        &.active {
-          background-color: var(--primary-color);
-          color: #fff;
-        }
-      }
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
-  }
 
-  main {
-    flex: 1 1 0%;
-    min-width: 0;
+    nav a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      color: var(--text-color);
+    }
+
+    nav a.active {
+      background: var(--primary-color);
+      color: #fff;
+    }
+
+    nav a span.material-symbols-outlined {
+      font-size: 20px;
+    }
   }
 }

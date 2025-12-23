@@ -1,54 +1,24 @@
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
 
-  .main {
-    flex-grow: 1;
-  }
+.main {
+  flex: 1;
 }
 
 .container {
-  min-width: 90vw;
+  width: 100%;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-header {
-  border-bottom: 1px solid var(--border-color);
-
-  .container > div {
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-footer {
-  border-top: 1px solid var(--border-color);
-
-  .container > div {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  p {
-    color: var(--text-color);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
+  padding: 0 16px;
 }
 
 a {
@@ -57,5 +27,17 @@ a {
 
   &:hover {
     color: var(--primary-color);
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }

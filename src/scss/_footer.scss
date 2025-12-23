@@ -1,10 +1,13 @@
 footer {
   border-top: 1px solid var(--border-color);
-  div {
-    display: flex;
 
+  .container > div {
+    display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
   }
+
   p {
     color: var(--text-color);
     font-size: 0.875rem;
