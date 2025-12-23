@@ -1,4 +1,3 @@
-/* 確保 section 能撐滿視窗 */
 html,
 body {
   height: 100%;
@@ -10,7 +9,6 @@ section {
   flex-direction: column;
   min-height: 100vh;
 
-  /* main 直接撐滿剩餘空間 */
   .main {
     flex-grow: 1;
   }
